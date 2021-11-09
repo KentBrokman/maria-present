@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+    --input-border: #8b8a8b;
+    --input-focus-h: 245;
+    --input-focus-s: 100%;
+    --input-focus-l: 42%;
+  }
+  
+  
+
+.wrapper {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    /* filter: blur(3px);
+    background-size: auto 100%;
+    background-position: center center;
+    background-image: url('https://i.ibb.co/bvQ3sX5/home.jpg');
+    overflow: hidden; */
+}
+
+.backgroundImage {
+    /* The image used */
+    background-image: url("https://i.ibb.co/bvQ3sX5/home.jpg");
+    /* Add the blur effect */
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 20px;
+    
+    
+}
+
+.form {
+    height: inherit;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgba(255,122,115, 0.5);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+/* .input {
+    font-size: 16px;
+    
+    font-size: Max(16px, 1em);
+    font-family: inherit;
+    padding: 0.25em 0.5em;
+    background-color: #fff0f0;
+    border: 2px solid #b18597;
+    border-radius: 4px;
+    transition: 180ms box-shadow ease-in-out;
+  } */
+.input {
+    padding: 10px;
+    margin-bottom: 20px;
+    padding: 1.25em 2em;
+    background: #fff0f0;
+    border: 2px solid #b18597;
+    border-radius: 0.75em;
+}
+
+.input:focus {
+    border-color: #ce8ba7;
+    box-shadow: 0 0 0 3px #b18597;
+    outline: 3px solid transparent;
+  }
+
+  
+
